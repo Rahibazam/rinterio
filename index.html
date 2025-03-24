@@ -11,21 +11,88 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        .global-font{
+        .global-font {
             font-family: "Manrope", sans-serif;
+        }
+
+        .primary-color {
+            background-color: #ABEF5F;
         }
     </style>
 </head>
 
-<body class="max-w-8/10 mx-auto global-font">
-    <header>
+<body class="bg-linear-[#F4F4F4_100%,FFFFFF_100%]">
+    <header class="max-w-lg md:max-w-8/10 mx-auto global-font">
         <nav>
-            
+            <div class="navbar pt-5">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a><strong>Home</strong></a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="flex items-center text-2xl font-extrabold"><svg xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="size-6 primary-color rounded-full py-1 rotate-45 mr-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+                        </svg>
+                        Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a><strong>Home</strong></a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex gap-4">
+                        <button class="btn btn-circle bg-white hidden md:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-circle bg-white hidden md:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+
+                            </svg>
+                        </button>
+                        <a class="btn rounded-3xl font-bold primary-color">Book Consult <svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="white" class="size-6 bg-[#1C1C1C] rounded-full py-1 rotate-45 mr-1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+                            </svg></a>
+
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        
+    <main class="max-w-8/10 mx-auto global-font">
+
     </main>
 
     <footer>
