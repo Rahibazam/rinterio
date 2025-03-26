@@ -11,12 +11,16 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        .global-font {
+        .global-font{
             font-family: "Manrope", sans-serif;
         }
 
-        .primary-color {
+        .primary-color{
             background-color: #ABEF5F;
+        }
+
+        .accent-color{
+            background-color: rgba(171, 239, 95, 0.5);
         }
     </style>
 </head>
@@ -91,8 +95,27 @@
         </nav>
     </header>
 
-    <main class="max-w-8/10 mx-auto global-font">
-
+    <main class="global-font">
+        <!-- banner -->
+        <section class="mx-auto w-11/12 md:w-4/5 ">
+            <!-- banner img -->
+            <img class="mx-auto mt-10 mb-5" src="assets/banner.png" alt="">
+            <!-- banner text -->
+            <div class="text-center">
+                <h1 class="text-3xl md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="text-center my-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <!-- banner button -->
+            <div class="text-center">
+                <button class="btn rounded-3xl font-bold accent-color">View Details <svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="black" class="size-6 bg-[#ABEF5F] rounded-full py-1 rotate-45 mr-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+                    </svg></button>
+            </div>
+        </section>
     </main>
 
     <footer>
