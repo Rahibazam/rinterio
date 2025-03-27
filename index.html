@@ -22,6 +22,10 @@
         .accent-color {
             background-color: rgba(171, 239, 95, 0.5);
         }
+
+        .optional-color {
+            color: #494949;
+        }
     </style>
 </head>
 
@@ -123,13 +127,14 @@
         <section class="bg-gray-300 mt-20">
             <div class="md:flex items-end mx-auto w-12/12 md:w-4/5 py-22">
                 <!-- arrow img -->
-                 <div class="hidden md:block absolute -bottom-30 left-25"><img src="assets/Vector.png" alt=""></div>
+                <div class="hidden md:block absolute -bottom-30 left-25"><img src="assets/Vector.png" alt=""></div>
                 <!-- left column -->
                 <div class="flex-1">
                     <!-- about us -->
                     <div class="mb-5 text-center md:text-left">
-                        <a class="btn rounded-3xl font-bold bg-white border-none"><svg xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                        <a class="btn rounded-3xl font-bold bg-white border-none pointer-events-none"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-4">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
@@ -137,36 +142,41 @@
                     </div>
                     <!-- section text -->
                     <div class="w-4/5 md:w-auto mx-auto">
-                        <h3 class="text-center md:text-left text-3xl md:text-4xl font-extrabold">We design thoughtful <br>liveable spaces</h3>
-                        <p class="text-center md:text-left mt-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        <h3 class="text-center md:text-left text-3xl md:text-4xl font-extrabold">We design thoughtful
+                            <br>liveable spaces
+                        </h3>
+                        <p class="text-center md:text-left mt-5">The barn house captivates with its blend of rustic
+                            charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                     </div>
                     <!-- cards container -->
-                     <div>
+                    <div>
                         <!-- first card -->
-                        <div class="flex justify-start items-center mt-5 bg-white rounded-lg w-11/12 py-8 px-5 mx-auto md:mx-0">
+                        <div
+                            class="flex justify-start items-center mt-5 bg-white rounded-lg w-11/12 py-8 px-5 mx-auto md:mx-0">
                             <!-- card img -->
                             <div class="">
                                 <img src="assets/commercial.png" alt="">
                             </div>
                             <!-- card content -->
-                             <div class="ml-6 w-3/5">
+                            <div class="ml-6 w-3/5">
                                 <h4 class="text-xl font-bold mb-2">Commercial</h4>
                                 <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                             </div>
+                            </div>
                         </div>
                         <!-- second card -->
-                        <div class="flex justify-start items-center mt-5 bg-white rounded-lg w-11/12 py-8 px-5 mx-auto md:mx-0 mb-5 md:mb-0">
+                        <div
+                            class="flex justify-start items-center mt-5 bg-white rounded-lg w-11/12 py-8 px-5 mx-auto md:mx-0 mb-5 md:mb-0">
                             <!-- card img -->
                             <div class="">
                                 <img src="assets/residential.png" alt="">
                             </div>
                             <!-- card content -->
-                             <div class="ml-6 w-3/5">
+                            <div class="ml-6 w-3/5">
                                 <h4 class="text-xl font-bold mb-2">Residential</h4>
                                 <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                             </div>
+                            </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
                 <!-- right column -->
                 <div class="flex-1 w-11/12 md:w-auto md:w-auto mx-auto md:mx-0">
@@ -175,6 +185,60 @@
             </div>
         </section>
 
+        <!-- metrics section -->
+        <section class="bg-gray-300">
+            <!-- metrics container -->
+            <div class="grid md:grid-cols-2 gap-10 lg:grid-cols-4 mx-auto w-11/12 md:w-4/5 py-12 bg-white rounded-lg">
+                <!-- first metric -->
+                <div>
+                    <!-- img -->
+                    <div class="mb-3">
+                        <img class="mx-auto" src="assets/review.png" alt="">
+                    </div>
+                    <!-- text content -->
+                    <div class="text-center">
+                        <h3 class="text-4xl font-extrabold mb-2 optional-color">235+</h3>
+                        <p class="optional-color">Happy Client Review</p>
+                    </div>
+                </div>
+                <!-- second metric -->
+                <div>
+                    <!-- img -->
+                    <div class="mb-3">
+                        <img class="mx-auto" src="assets/departement.png" alt="">
+                    </div>
+                    <!-- text content -->
+                    <div class="text-center">
+                        <h3 class="text-4xl font-extrabold mb-2 optional-color">50+</h3>
+                        <p class="optional-color">Work Departments</p>
+                    </div>
+                </div>
+                <!-- third metric -->
+                <div>
+                    <!-- img -->
+                    <div class="mb-3">
+                        <img class="mx-auto" src="assets/client.png" alt="">
+                    </div>
+                    <!-- text content -->
+                    <div class="text-center">
+                        <h3 class="text-4xl font-extrabold mb-2 optional-color">30k+</h3>
+                        <p class="optional-color">Our Happy Client</p>
+                    </div>
+                </div>
+                <!-- fourth metric -->
+                <div>
+                    <!-- img -->
+                    <div class="mb-3">
+                        <img class="mx-auto" src="assets/staff.png" alt="">
+                    </div>
+                    <!-- text content -->
+                    <div class="text-center">
+                        <h3 class="text-4xl font-extrabold mb-2 optional-color">307+</h3>
+                        <p class="optional-color">Staff Members</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
